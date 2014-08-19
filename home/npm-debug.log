@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'login' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose adduser before first PUT { name: 'xiaoweb',
+4 verbose adduser   salt: 'XXXXX',
+4 verbose adduser   password_sha: 'XXXXX',
+4 verbose adduser   email: 'girlblank@gmail.com',
+4 verbose adduser   _id: 'org.couchdb.user:xiaoweb',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2014-08-19T03:39:50.551Z' }
+5 verbose url raw /-/user/org.couchdb.user:xiaoweb
+6 verbose url resolving [ 'http://registry.npmjs.org/',
+6 verbose url resolving   './-/user/org.couchdb.user:xiaoweb' ]
+7 verbose url resolved http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+8 info trying registry request attempt 1 at 11:39:50
+9 http PUT http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+10 http 409 http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+11 verbose adduser update existing user
+12 verbose url raw /-/user/org.couchdb.user:xiaoweb
+13 verbose url resolving [ 'http://registry.npmjs.org/',
+13 verbose url resolving   './-/user/org.couchdb.user:xiaoweb' ]
+14 verbose url resolved http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+15 info trying registry request attempt 1 at 11:39:51
+16 http GET http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+17 http 401 http://registry.npmjs.org/-/user/org.couchdb.user:xiaoweb
+18 verbose adduser back [ [Error: unauthorized User document conflicts must be resolved before the document is used for authentication purposes.: -/user/org.couchdb.user:xiaoweb],
+18 verbose adduser   { error: 'unauthorized',
+18 verbose adduser     reason: 'User document conflicts must be resolved before the document is used for authentication purposes.' },
+18 verbose adduser   '{"error":"unauthorized","reason":"User document conflicts must be resolved before the document is used for authentication purposes."}\n' ]
+19 warn adduser Incorrect username or password
+19 warn adduser You can reset your account by visiting:
+19 warn adduser
+19 warn adduser     http://admin.npmjs.org/reset
+20 error Error: unauthorized User document conflicts must be resolved before the document is used for authentication purposes.: -/user/org.couchdb.user:xiaoweb
+20 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:268:14)
+20 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:120:22)
+20 error     at Request.EventEmitter.emit (events.js:98:17)
+20 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:648:16)
+20 error     at Request.EventEmitter.emit (events.js:117:20)
+20 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:610:14)
+20 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+20 error     at _stream_readable.js:870:14
+20 error     at process._tickCallback (node.js:415:13)
+21 error If you need help, you may report this log at:
+21 error     <http://github.com/isaacs/npm/issues>
+21 error or email it to:
+21 error     <npm-@googlegroups.com>
+22 error System Darwin 13.3.0
+23 error command "node" "/usr/local/bin/npm" "login"
+24 error cwd /Users/zhanglibin/Github/alone_fe/home
+25 error node -v v0.10.0
+26 error npm -v 1.2.14
+27 verbose exit [ 1, true ]

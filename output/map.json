@@ -1,0 +1,9 @@
+{
+    "res": {
+        "common/widget/header/header.css": {
+            "uri": "/common/widget/header/header.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}
