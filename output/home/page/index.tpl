@@ -1,1 +1,0 @@
-<link rel="import" src="common:page/base_layout.tpl">

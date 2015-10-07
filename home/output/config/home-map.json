@@ -1,0 +1,44 @@
+{
+    "res": {
+        "home:page/index/index.css": {
+            "uri": "/page/index/index.css",
+            "type": "css",
+            "pkg": "home:p1"
+        },
+        "home:page/index/index.js": {
+            "uri": "/page/index/index.js",
+            "type": "js",
+            "deps": [
+                "home:page/index/index.css"
+            ],
+            "pkg": "home:p0"
+        },
+        "home:page/index/index.tpl": {
+            "uri": "/page/index/index.html",
+            "type": "html",
+            "deps": [
+                "home:page/index/index.js",
+                "home:page/index/index.css"
+            ]
+        }
+    },
+    "pkg": {
+        "home:p0": {
+            "uri": "/js/home.js",
+            "type": "js",
+            "has": [
+                "home:page/index/index.js"
+            ],
+            "deps": [
+                "home:page/index/index.css"
+            ]
+        },
+        "home:p1": {
+            "uri": "/css/home.css",
+            "type": "css",
+            "has": [
+                "home:page/index/index.css"
+            ]
+        }
+    }
+}

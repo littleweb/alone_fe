@@ -1,8 +1,9 @@
 <html>
 <head>
-	<title></title>
+	<title><%=title%></title>
+	<link rel="stylesheet" type="text/css" href="static/<%=css%>">
 </head>
 <body>
-{content}
+<%=content%>
 </body>
 </html>
